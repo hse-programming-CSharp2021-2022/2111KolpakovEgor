@@ -51,7 +51,9 @@ namespace _07_01
                         arr[i] = 0;
                     }
                 }
-                Console.WriteLine("Массив четных индексов:");
+                Array.Resize(ref chet, evenCount);
+                Array.Resize(ref nechet, oddCount);
+                Console.WriteLine("\n"+"Массив четных индексов:");
                 foreach (var i in chet)
                 {
                     Console.Write(i + " ");
